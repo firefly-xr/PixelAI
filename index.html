@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelChatAI</title>
+    <link rel="stylesheet" href="styles.css" />
+   </head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    
+    <div class="cursor-follower" id="cursorFollower"></div>
+    
+    <div class="glow-corner glow-top-right"></div>
+    <div class="glow-corner glow-bottom-left"></div>
+    <div class="glow-corner glow-center"></div>
+    <div class="particles" id="particles"></div>
+    
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-title">Chat History</div>
+            <button class="close-sidebar" id="closeSidebar">×</button>
+        </div>
+        <div class="chat-history">
+            <div class="history-item">Previous chat 1</div>
+            <div class="history-item">Chat 2</div>
+            <div class="history-item">Conversation from yesterday</div>
+        </div>
+    </div>
+    
+    <div class="main-container" id="mainContainer">
+        <div class="header">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="logo">PixelChatAI</div>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="cnt.html">Contact</a>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <div class="welcome-container" id="welcomeContainer">
+                <div class="robot">
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="mouth"></div>
+                </div>
+                <h1 class="welcome-title">Welcome to PixelChatAI</h1>
+                <p class="welcome-subtitle">Your Personal AI assistant. Ask me anything!</p>
+                <button class="start-button" id="startChat">Start Chatting</button>
+            </div>
+            
+            <div class="chat-container" id="chatContainer">
+                <div class="message-container" id="messageContainer">
+                </div>
+            </div>
+        </div>
+        
+        <div class="input-container" id="inputContainer">
+            <textarea class="message-input" id="messageInput" placeholder="Type your message here..." rows="1"></textarea>
+            <button class="voice-button" id="voiceButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" y1="19" x2="12" y2="23"></line>
+                    <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+            </button>
+            <button class="send-button" id="sendButton">→</button>
+        </div>
+    </div>
+    <script src="script.js">
+   
+    </script>
+   
+</body>
+</html>
